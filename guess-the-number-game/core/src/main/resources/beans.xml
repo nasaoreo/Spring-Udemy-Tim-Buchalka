@@ -7,14 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config/>
-
-    <bean id="numberGenerator" class="academy.learningprogramming.NumberGeneratorImpl"/>
-
-    <bean id="game" class="academy.learningprogramming.GameImpl">
-        <!-- contructor-based-dependency
-        <constructor-arg ref="numberGenerator"/>-->
-        <!--        <property name="numberGenerator" ref="numberGenerator"/>-->
-    </bean>
+    <context:component-scan base-package="academy.learningprogramming"/>
 
 </beans>
