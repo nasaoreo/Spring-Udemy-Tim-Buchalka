@@ -3,18 +3,17 @@ package academy.learningprogramming;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
-    private static final String CONFIG_LOCATION = "beans.xml";
 
     public static void main(String[] args) {
         logger.info("Get The Number");
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new ClassPathXmlApplicationContext("beans.xml");
+                = new AnnotationConfigApplicationContext(AppConfig.class);
 
         //get number generator bean from context
         NumberGenerator numberGenerator
