@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>academy.learningprogramming</groupId>
+    <artifactId>todo-list</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <!--properties-->
+    <properties>
+        <spring.version>5.3.6</spring.version>
+        <lombok.version>1.18.20</lombok.version>
+        <logback.version>1.2.3</logback.version>
+        <annotation.version>1.3.2</annotation.version>
+        <java.version>11</java.version>
+    </properties>
+
+    <dependencies>
+        <!--Spring Web MVC-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!--Lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/lombok.jar</systemPath>
+        </dependency>
+
+        <!--Logback-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <!--Javax Annotation-->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${annotation.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <target>${java.version}</target>
+                    <source>${java.version}</source>
+                    <release>${java.version}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.6.7</version>
+                <configuration>
+                    <container>
+                        <containerId>tomcat9x</containerId>
+                        <type>embedded</type>
+                    </container>
+                    <configuration>
+                        <properties>
+                            <cargo.servlet.port>8081</cargo.servlet.port>
+                        </properties>
+                    </configuration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
