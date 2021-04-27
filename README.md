@@ -6,3 +6,7 @@ this repository contains projects for learning spring framework in <a href="http
 ### guess-the-number-game
 - logging with SLF4J & Logback
 - multi module spring project
+- use lombok
+
+### todo-list
+- Spring Web MVC
