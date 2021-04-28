@@ -13,7 +13,7 @@ Console game that guesses the number
 
 ## todo-list
 ### description
-Simple application that manages to-do items
+- Simple application that manages to-do items (CRUD)
 
 ### learning
 - Spring Web MVC
