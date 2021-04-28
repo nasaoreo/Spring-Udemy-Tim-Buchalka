@@ -1,12 +1,19 @@
 # Spring-Udemy-Tim-Buchalka
 
-this repository contains projects for learning spring framework in <a href="https://www.udemy.com/course/java-spring-framework-masterclass/">udemy course</a>.
+This repository contains projects for learning spring framework in <a href="https://www.udemy.com/course/java-spring-framework-masterclass/">udemy course</a>.
 
-## Proejct List
-### guess-the-number-game
-- logging with SLF4J & Logback
-- multi module spring project
-- use lombok
+## guess-the-number-game
+### description
+Console game that guesses the number
 
-### todo-list
+### learning
+- SLF4J & Logback
+- Creating multi module in spring project
+- Lombok
+
+## todo-list
+### description
+Simple application that manages to-do items
+
+### learning
 - Spring Web MVC
