@@ -17,7 +17,6 @@ public class TodoData {
 
     // == constructors ==
     public TodoData() {
-
         // add some dummy data, using addItem method so it sets the id field
         addItem(new TodoItem("first", "first details", LocalDate.now()));
         addItem(new TodoItem("second", "second details", LocalDate.now()));
