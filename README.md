@@ -4,12 +4,14 @@ This repository contains projects for learning spring framework in <a href="http
 
 ## guess-the-number-game
 ### description
-Console game that guesses the number
+- Consol game that guesses the number
+- Web game that guess the number
 
 ### learning
 - SLF4J & Logback
 - Creating multi module in spring project
 - Lombok
+- Spring Boot
 
 ## todo-list
 ### description
@@ -17,3 +19,12 @@ Console game that guesses the number
 
 ### learning
 - Spring Web MVC
+
+## boot-demo
+### description
+spring boot demo project
+
+### learning
+- Spring Boot
+- Spring Initializer(https://start.spring.io/)
+
