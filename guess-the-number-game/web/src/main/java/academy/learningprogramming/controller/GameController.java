@@ -50,4 +50,10 @@ public class GameController {
 
         return GameMapping.REDIRECT_PLAY;
     }
+
+    @GetMapping(GameMapping.RESTART)
+    public String restart(Model model){
+        gameService.reset();
+        return GameMapping.REDIRECT_PLAY;
+    }
 }
