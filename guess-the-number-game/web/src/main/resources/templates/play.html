@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:replace="~{fragments/head :: headFragment}">
     <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+    <title>Play Game</title>
 </head>
 <body>
 <div align="center">
@@ -20,8 +20,8 @@
         <input type="submit" value="Submit"/>
     </form>
 
-    <footer>
-        <p>Create by Nasaoreo</p>
+    <footer th:replace="~{fragments/footer :: footerFragment}">
+        <p>Play Game Footer</p>
     </footer>
 </div>
 </body>
