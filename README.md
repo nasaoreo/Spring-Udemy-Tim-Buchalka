@@ -12,6 +12,7 @@ This repository contains projects for learning spring framework in <a href="http
 - Creating multi module in spring project
 - Lombok
 - Spring Boot
+- Thymeleaf
 
 ## todo-list
 ### description
