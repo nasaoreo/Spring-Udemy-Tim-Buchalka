@@ -1,0 +1,4 @@
+<thlogic>
+    <attr sel="#head"
+          th:fragment="headFragment"/>
+</thlogic>

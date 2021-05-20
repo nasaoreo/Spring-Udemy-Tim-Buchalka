@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="head">
     <meta charset="UTF-8">
     <title>Play Game</title>
 </head>
 <body>
 <div align="center">
     <h1>Guess the Number Game</h1>
-    <h3 th:text="${mainMessage}">
+    <h3 id="main-message">
         Main Message Content
     </h3>
-    <h3 th:text="${resultMessage}">
+    <h3 id="result-message">
         Result Message Content
     </h3>
 
@@ -20,7 +20,7 @@
         <input type="submit" value="Submit"/>
     </form>
 
-    <footer th:replace="~{fragments/footer :: footerFragment}">
+    <footer id="footer">
         <p>Play Game Footer</p>
     </footer>
 </div>
