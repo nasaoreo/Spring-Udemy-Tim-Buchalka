@@ -13,6 +13,7 @@ This repository contains projects for learning spring framework in <a href="http
 - Lombok
 - Spring Boot
 - Thymeleaf
+- Maven
 
 ## todo-list
 ### description
@@ -20,6 +21,7 @@ This repository contains projects for learning spring framework in <a href="http
 
 ### learning
 - Spring Web MVC
+- Maven
 
 ## boot-demo
 ### description
@@ -28,4 +30,13 @@ spring boot demo project
 ### learning
 - Spring Boot
 - Spring Initializer(https://start.spring.io/)
+- Maven
 
+## gradle-demo
+### description
+spring boot demo project using gradle
+
+### learning
+- Gradle
+- Spring Boot
+- Spring Initializer(https://start.spring.io/)
