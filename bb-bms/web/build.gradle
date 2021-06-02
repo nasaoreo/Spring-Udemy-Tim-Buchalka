@@ -1,0 +1,8 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(':core')
+
+    implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+}
