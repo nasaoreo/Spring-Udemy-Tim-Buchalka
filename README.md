@@ -40,3 +40,14 @@ spring boot demo project using gradle
 - Gradle
 - Spring Boot
 - Spring Initializer(https://start.spring.io/)
+
+## bb-bms
+### description
+multi module project using gradle
+
+### learning
+- Gradle
+- Spring Boot
+- Spring Initializer(https://start.spring.io/)
+- Lombok
+- Thymeleaf
