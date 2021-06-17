@@ -5,6 +5,8 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class IOCApp1 {
     public static void main(String[] args) {
+        // ========== Spring IoC Container : Accessing metadata from the file System ===================
+
         // create the application context (container)
         ApplicationContext ctx = new FileSystemXmlApplicationContext("beans.xml");
 
@@ -16,5 +18,7 @@ public class IOCApp1 {
 
         // close the application context (container)
         ((FileSystemXmlApplicationContext)ctx).close();
+
+        // ==============================================================================================
     }
 }
