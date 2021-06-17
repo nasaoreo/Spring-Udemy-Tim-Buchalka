@@ -52,10 +52,9 @@ multi module project using gradle
 - Lombok
 - Thymeleaf
 
-## spring-ioc-demo1
+## spring-ioc-demo1/2
 ### description
 test project for learning IoC, DI
 
 ### learning
-- IoC
-- DI
+- IoC (Accessing metadata from the file sysetem or classpath)
