@@ -51,3 +51,11 @@ multi module project using gradle
 - Spring Initializer(https://start.spring.io/)
 - Lombok
 - Thymeleaf
+
+## spring-ioc-demo1
+### description
+test project for learning IoC, DI
+
+### learning
+- IoC
+- DI
