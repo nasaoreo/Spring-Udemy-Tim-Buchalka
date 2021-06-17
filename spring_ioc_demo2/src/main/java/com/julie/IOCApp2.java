@@ -1,0 +1,24 @@
+package com.julie;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class IOCApp2 {
+    public static void main(String[] args) {
+        // ========== Spring IoC Container : Accessing metadata from the classpath ===================
+
+        // create the application context (container)
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+
+        // create the bean
+        Organization org = (Organization) ctx.getBean("myorg");
+
+        // Invoke the company slogan via the bean
+        org.corporateSlogan();
+
+        // close the application context (container)
+        ((ClassPathXmlApplicationContext)ctx).close();
+
+        // ==============================================================================================
+    }
+}
