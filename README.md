@@ -58,3 +58,27 @@ test project for learning IoC, DI
 
 ### learning
 - IoC (Accessing metadata from the file sysetem or classpath)
+
+## spring_constructor_args_demo
+### description
+test project for setting constructor arguments using spring bean config file
+
+### learning
+- IoC
+- Setting constructor argument of bean
+
+## spring_setter_demo
+### description
+test project for setting properties using spring bean config file
+
+### learning
+- IoC
+- Setting properties of bean
+
+## spring_di_setter_demo
+### description
+test project for spring setter based dependency injection
+
+### learning
+- IoC
+- Setter based DI
