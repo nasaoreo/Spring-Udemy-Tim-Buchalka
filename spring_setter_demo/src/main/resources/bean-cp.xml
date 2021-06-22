@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myorg" class="com.julie.springdemo.Organization">
+        <constructor-arg name="companyName" value="BMW"></constructor-arg>
+        <constructor-arg name="yearOfIncorporation" value="1929"></constructor-arg>
+        <property name="postalCode" value="56565"></property>
+        <property name="employeeCount" value="10000"></property>
+    </bean>
+
+</beans>
