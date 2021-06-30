@@ -5,29 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.julie</groupId>
-    <artifactId>spring-mvc-demo1</artifactId>
+    <artifactId>spring-mvc-demo-1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
-        <spring.version>5.0.5.RELEASE</spring.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
+            <version>5.2.15.RELEASE</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
         <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
-            <artifactId>jstl-api</artifactId>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
             <version>1.2</version>
-            <type>jar</type>
         </dependency>
     </dependencies>
 
@@ -48,7 +43,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <failOnMissingWebXml>true</failOnMissingWebXml>
                 </configuration>
             </plugin>
             <plugin>
@@ -64,4 +59,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
