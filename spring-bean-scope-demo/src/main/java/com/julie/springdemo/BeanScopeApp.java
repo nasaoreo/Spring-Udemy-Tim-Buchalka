@@ -24,6 +24,8 @@ public class BeanScopeApp {
 
         if(org == org2)
             System.out.println("Singleton scope test : org and org2 point to the same instance");
+        else
+            System.out.println("Both org and org2 are separate instance");
 
         //invoke corporateService via organization bean
 //        System.out.println(org.corporateService());

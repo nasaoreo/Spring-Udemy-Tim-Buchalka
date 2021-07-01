@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="myorg" class="com.julie.springdemo.domain.Organization" scope="singleton">
+    <bean id="myorg" class="com.julie.springdemo.domain.Organization" scope="prototype">
         <constructor-arg name="companyName" value="Amizan"></constructor-arg>
         <constructor-arg name="yearOfIncorporation" value="1994"></constructor-arg>
         <property name="postalCode" value="75757"></property>
