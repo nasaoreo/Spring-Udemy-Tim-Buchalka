@@ -12,15 +12,21 @@ public class BeanScopeApp {
 
         //create the bean
         Organization org = (Organization)ctx.getBean("myorg");
+        Organization org2 = (Organization)ctx.getBean("myorg");
+        org2.setPostalCode("98989");
 
         //print the company slogan
-        System.out.println(org.corporateSlogan());
+//        System.out.println(org.corporateSlogan());
 
         //print organization details.
         System.out.println(org);
+        System.out.println(org2);
+
+        if(org == org2)
+            System.out.println("Singleton scope test : org and org2 point to the same instance");
 
         //invoke corporateService via organization bean
-        System.out.println(org.corporateService());
+//        System.out.println(org.corporateService());
 
         ((ClassPathXmlApplicationContext)ctx).close();
     }
