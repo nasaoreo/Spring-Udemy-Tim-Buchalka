@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myorg" class="com.julie.springdemo.domain.Organization" init-method="initialize" destroy-method="destroy">
+        <constructor-arg name="companyName" value="Amizan"></constructor-arg>
+        <constructor-arg name="yearOfIncorporation" value="1994"></constructor-arg>
+        <property name="postalCode" value="75757"></property>
+        <property name="employeeCount" value="7500"></property>
+        <property name="slogan" value="Work hard, have fun, make history"></property>
+        <property name="businessService" ref="ecommerceService"></property>
+    </bean>
+    <bean id="cloudService" class="com.julie.springdemo.serviceImp.CloudServiceImp"></bean>
+    <bean id="ecommerceService" class="com.julie.springdemo.serviceImp.EcommerceServiceImpl"></bean>
+
+</beans>
