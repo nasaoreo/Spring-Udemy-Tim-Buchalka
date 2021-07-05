@@ -14,4 +14,12 @@ public class CloudServiceImp implements BusinessService {
 
         return service;
     }
+
+    public void postContruct(){
+        System.out.println("cloudServiceImpl: postConstruct called");
+    }
+
+    public void preDestroy(){
+        System.out.println("cloudServiceImpl: preDestroy called");
+    }
 }
