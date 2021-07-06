@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myorg" class="com.julie.springdemo.domain.Organization" p:companyName="BMW" p:yearOfIncorporation="1929" p:address-ref="address"/>
+    <!--    <constructor-arg name="companyName" value="BMW"></constructor-arg>-->
+    <!--    <constructor-arg name="yearOfIncorporation" value="1929"></constructor-arg>-->
+    <!--</bean>-->
+    <bean id="address" class="com.julie.springdemo.domain.Address"
+          p:street="jongro-1" p:city="seoul" p:zipCode="000-000"/>
+
+</beans>
