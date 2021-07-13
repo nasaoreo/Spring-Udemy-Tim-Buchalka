@@ -1,12 +1,16 @@
 package com.julie.springdemo.domain;
 
 import com.julie.springdemo.service.BusinessService;
+import org.springframework.beans.factory.annotation.Value;
 
 public class Organization {
 
     private String companyName;
     private int yearOfIncorporation;
+
+    @Value("${org.postalCode}")
     private String postalCode;
+
     private int employeeCount;
     private String slogan;
     private BusinessService businessService;
