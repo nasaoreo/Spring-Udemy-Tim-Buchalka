@@ -10,7 +10,6 @@
     <bean id="myorg" class="com.julie.springdemo.domain.Organization">
         <constructor-arg name="companyName" value="${org.companyName}"></constructor-arg>
         <constructor-arg name="yearOfIncorporation" value="${org.yearOfIncorporation}"></constructor-arg>
-        <property name="postalCode" value="75757"></property>
         <property name="employeeCount" value="${org.employeeCount}"></property>
         <property name="slogan" value="Work hard, have fun, make history"></property>
         <property name="businessService" ref="cloudService"></property>
