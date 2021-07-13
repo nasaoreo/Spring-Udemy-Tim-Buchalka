@@ -11,7 +11,6 @@
         <constructor-arg name="companyName" value="${org.companyName}"></constructor-arg>
         <constructor-arg name="yearOfIncorporation" value="${org.yearOfIncorporation}"></constructor-arg>
         <property name="employeeCount" value="${org.employeeCount}"></property>
-        <property name="slogan" value="Work hard, have fun, make history"></property>
         <property name="businessService" ref="cloudService"></property>
     </bean>
     <bean id="cloudService" class="com.julie.springdemo.serviceImp.CloudServiceImp"></bean>

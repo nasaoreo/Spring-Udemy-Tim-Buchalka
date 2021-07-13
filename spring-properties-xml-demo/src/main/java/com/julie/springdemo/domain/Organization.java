@@ -1,6 +1,7 @@
 package com.julie.springdemo.domain;
 
 import com.julie.springdemo.service.BusinessService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Organization {
@@ -43,7 +44,8 @@ public class Organization {
         System.out.println("setEmployeeCount() called");
     }
 
-    public void setSlogan(String slogan) {
+    @Autowired
+    public void setSlogan(@Value("${org.slogan}") String slogan) {
         this.slogan = slogan;
         System.out.println("setSlogan() called");
     }
