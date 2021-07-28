@@ -56,4 +56,16 @@ public class Organization {
     public void setSlogan(String slogan) {
         this.slogan = slogan;
     }
+
+    @Override
+    public String toString() {
+        return "Organization{" +
+                "id=" + id +
+                ", companyName='" + companyName + '\'' +
+                ", yearOfIncorporation=" + yearOfIncorporation +
+                ", postalCode='" + postalCode + '\'' +
+                ", employeeCount=" + employeeCount +
+                ", slogan='" + slogan + '\'' +
+                '}';
+    }
 }

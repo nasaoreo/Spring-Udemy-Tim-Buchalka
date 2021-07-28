@@ -5,7 +5,7 @@ import com.julie.springdemo.domain.Organization;
 import javax.sql.DataSource;
 import java.util.List;
 
-public interface OrganizatinDao {
+public interface OrganizationDao {
 
     //Set the data-source that will be required to create a connection to the database.
     public void setDataSource(DataSource dataSource);
