@@ -35,7 +35,7 @@ public class OrganizationDaoImpl implements OrganizationDao {
     }
 
     public List<Organization> getAllOrganizatios() {
-        String sqlQuery = "select * from organization";
+        String sqlQuery = "selec * from organization";
         List<Organization> orgList = jdbcTemplate.query(sqlQuery, new OrganizationRowMapper());
 
         return orgList;
