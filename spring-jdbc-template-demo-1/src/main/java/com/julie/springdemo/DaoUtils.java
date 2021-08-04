@@ -13,11 +13,16 @@ public class DaoUtils {
     public static final String deleteOperation = "DELETE";
     public static final String cleanupOperation = "TRUNCATE";
 
-    public static void pringOrganizations(List<Organization> orgs, String operation){
+    public static void printOrganizations(List<Organization> orgs, String operation){
         System.out.println("\n********* printing organizations after " + operation + " operation *********");
         for(Organization org : orgs){
             System.out.println(org);
         }
+    }
+
+    public static void printOrganization(Organization org, String operation){
+        System.out.println("\n********* printing organizations after invoking " + operation + " *********");
+        System.out.println(org);
     }
 
     public static void printSuccessFailure(String operation, boolean param){
@@ -45,7 +50,7 @@ public class DaoUtils {
         System.out.println("Created " + createCnt + " organizations");
     }
 
-    public static void pringOrganizationCount(List<Organization> orgs, String operation){
+    public static void printOrganizationCount(List<Organization> orgs, String operation){
         System.out.println("\n********* Currently we have " + orgs.size() + " organizations after "
                 + "operation *********");
     }
